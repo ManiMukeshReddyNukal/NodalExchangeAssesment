@@ -19,13 +19,6 @@ FROM openjdk:8-jdk-alpine
 # Set the working directory inside the container
 WORKDIR /app
 
-## Copy the wait-for-it.sh script into the container
-#COPY wait-for-it.sh /app/wait-for-it.sh
-#
-## Make the wait-for-it.sh script executable
-#RUN chmod +x /app/wait-for-it.sh
-
-
 # Copy the built jar file from the previous stage
 COPY --from=build /app/target/service1-0.0.1-SNAPSHOT.jar service1.jar
 
