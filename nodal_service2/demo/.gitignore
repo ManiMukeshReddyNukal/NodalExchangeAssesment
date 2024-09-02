@@ -1,10 +1,59 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Compiled class files
+*.class
 
-### STS ###
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# IntelliJ IDEA files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Exclude all .mvn folders
+**/.mvn/
+
+# Maven wrapper files
+.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+# Target and build directories
+target/
+**/target/
+build/
+**/build/
+
+# Gradle specific files
+.gradle/
+
+# NetBeans specific files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# STS (Spring Tool Suite) specific files
 .apt_generated
 .classpath
 .factorypath
@@ -13,22 +62,39 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# VS Code specific files
+.vscode/
+
+# MacOS specific files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Linux specific files
+*~
+
+# Exclude other IDE and editor-specific files
+*.swp
+*.bak
+*.tmp
+
+# Exclude additional unnecessary files and folders
+*.idea/
 *.iml
 *.ipr
+/.metadata/
+/bin/
+/gen/
+/out/
+*.orig
+*.rej
+*.swo
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Ignore Java binary files
+*.class
 
-### VS Code ###
-.vscode/
-.mvn
+# Ignore Java and Kotlin generated files
+bin/
+gen/
+out/
